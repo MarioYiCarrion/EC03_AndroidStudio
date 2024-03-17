@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@drawable/fondoHospedaje"
-    tools:context=".MainActivity">
+    tools:context=".FormularioFragment">
 
     <ImageView
         android:id="@+id/profileImage"
@@ -90,7 +89,7 @@
         app:layout_constraintTop_toBottomOf="@+id/accommodationText" />
 
     <Spinner
-        android:id="@+id/serviceSpinner"
+        android:id="@+id/ReservaSpinner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -101,7 +100,7 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/numberOfDogsEditText"
+        android:id="@+id/etNumerodePerros"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -109,30 +108,34 @@
         android:inputType="number"
         android:maxLength="2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/serviceSpinner"
-        app:layout_constraintTop_toBottomOf="@+id/serviceSpinner"
+        app:layout_constraintStart_toStartOf="@+id/ReservaSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/ReservaSpinner"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/dateEntradaEditText"
+        android:id="@+id/etFechaEntrada"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Fecha de Ingreso"
+        android:focusable="false"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/numberOfDogsEditText"
-        app:layout_constraintTop_toBottomOf="@+id/numberOfDogsEditText"
+        app:layout_constraintStart_toStartOf="@+id/etNumerodePerros"
+        app:layout_constraintTop_toBottomOf="@+id/etNumerodePerros"
         tools:ignore="TouchTargetSizeCheck" />
 
     <EditText
-        android:id="@+id/dateSalidaEditText"
+        android:id="@+id/etFechaSalida"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:hint="Fecha de Salida"
+        android:focusable="false"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/dateEntradaEditText"
-        app:layout_constraintTop_toBottomOf="@+id/dateEntradaEditText"
+        app:layout_constraintStart_toStartOf="@+id/etFechaEntrada"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaEntrada"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -143,6 +146,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/dateSalidaEditText" />
+        app:layout_constraintTop_toBottomOf="@+id/etFechaSalida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
