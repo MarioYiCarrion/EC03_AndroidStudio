@@ -26,15 +26,29 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun login() {
-        val username = txtEmail.text.toString()
-        val password = txtContraseña.text.toString()
-        if (username == "Aperez" && password == "SYS123") {
-            // Autenticación exitosa, iniciar MainActivity
-            startActivity(Intent(this, MainActivity::class.java))
-            finish() // Finaliza LoginActivity para que no pueda volver atrás
+        val username = txtEmail.text.toString().trim()
+        val password = txtContraseña.text.toString().trim()
+
+        // Verifica si los campos de usuario y contraseña no están vacíos
+        if (username.isNotEmpty() && password.isNotEmpty()) {
+
+            if (username == "Aperez" && password == "SYS123") {
+                // Autenticación exitosa, inicia MainActivity
+                startActivity(Intent(this, MainActivity::class.java))
+                finish() // Finaliza LoginActivity para que no pueda volver atrás
+            } else {
+                // Autenticación fallida
+                mostrarMensaje("Usuario o contraseña incorrectos")
+            }
         } else {
-            // Autenticación fallida
-            Toast.makeText(this, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+            // Campos de usuario o contraseña vacíos
+            mostrarMensaje("Por favor, introduce tu usuario y contraseña")
         }
     }
+
+    // Función para mostrar mensajes usando Toast
+    private fun mostrarMensaje(mensaje: String) {
+        Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show()
+    }
+
 }
