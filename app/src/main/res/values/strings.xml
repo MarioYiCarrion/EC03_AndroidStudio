@@ -10,5 +10,13 @@
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+<<<<<<< HEAD
     <string name="valAcceder">Acceder</string>
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnreservar">Reservar Ahora</string>
+    <string name="Formulario">Formulario</string>
+    <string name="Formulari">Formulario</string>
+>>>>>>> Master
 </resources>

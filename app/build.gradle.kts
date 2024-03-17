@@ -3,6 +3,8 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+
+
 android {
     namespace = "pe.edu.idat.ec03_androidstudio"
     compileSdk = 34
@@ -35,6 +37,9 @@ android {
     }
     buildFeatures {
         viewBinding = true
+    }
+    viewBinding{
+        enable= true
     }
 }
 
