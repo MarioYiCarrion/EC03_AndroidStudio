@@ -13,8 +13,7 @@ import pe.edu.idat.ec03_androidstudio.R
 import pe.edu.idat.ec03_androidstudio.databinding.FragmentFormularioBinding
 import java.util.*
 
-c
-lass FormularioFragment : Fragment() {
+class FormularioFragment : Fragment() {
 
     private var _binding: FragmentFormularioBinding? = null
     private val binding get() = _binding!!
