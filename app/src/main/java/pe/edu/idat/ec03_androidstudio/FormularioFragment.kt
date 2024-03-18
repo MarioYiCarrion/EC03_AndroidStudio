@@ -9,9 +9,9 @@ import android.widget.DatePicker
 import android.widget.EditText
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import pe.edu.idat.ec03_androidstudio.R
+import androidx.navigation.fragment.findNavController
 import pe.edu.idat.ec03_androidstudio.databinding.FragmentFormularioBinding
-import java.util.*
+import java.util.Calendar
 
 class FormularioFragment : Fragment() {
 
@@ -41,7 +41,17 @@ class FormularioFragment : Fragment() {
 
         binding.button.setOnClickListener {
             val numPerros = binding.etNumerodePerros.text.toString()
-            showToast("Número de perros: $numPerros")
+            val servicio = binding.ReservaSpinner.selectedItem.toString()
+            val fechaEntrada = binding.etFechaEntrada.text.toString()
+            val fechaSalida = binding.etFechaSalida.text.toString()
+
+            val bundle = Bundle().apply {
+                putString("numPerros", numPerros)
+                putString("servicio", servicio)
+                putString("fechaEntrada", fechaEntrada)
+                putString("fechaSalida", fechaSalida)
+            }
+            findNavController().navigate(R.id.listaReservasFragment, bundle)
         }
     }
 
