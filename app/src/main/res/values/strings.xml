@@ -11,11 +11,17 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="valAcceder">Acceder</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="btnreservar">Reservar Ahora</string>
     <string name="Formulario">Formulario</string>
     <string name="Formulari">Formulario</string>
     <string name="listadoFragmen">Listado de Reservas</string>
     <string name="ListaReservas">Lista de Reservaciones</string>
+    <string name="menu_listado">LISTADO</string>
+    <string name="titulomisamigos">Mis Amigos...</string>
+
+    
+    
+    
+
 </resources>
