@@ -14,4 +14,9 @@
         android:name="pe.edu.idat.ec03_androidstudio.FormularioFragment"
         android:label="@string/Formulari"
         tools:layout="@layout/fragment_formulario" />
+    <fragment
+        android:id="@+id/listaReservasFragment"
+        android:name="pe.edu.idat.ec03_androidstudio.ListaReservasFragment"
+        android:label="fragment_lista_reservas"
+        tools:layout="@layout/fragment_lista_reservas" />
 </navigation>
