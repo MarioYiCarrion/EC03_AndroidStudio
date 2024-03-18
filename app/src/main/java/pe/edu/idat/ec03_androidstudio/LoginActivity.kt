@@ -32,7 +32,7 @@ class LoginActivity : AppCompatActivity() {
         // Verifica si los campos de usuario y contraseña no están vacíos
         if (username.isNotEmpty() && password.isNotEmpty()) {
 
-            if (username == "Aperez" && password == "SYS123") {
+            if (username == "GrupoMedina" && password == "SYS123") {
                 // Autenticación exitosa, inicia MainActivity
                 startActivity(Intent(this, MainActivity::class.java))
                 finish() // Finaliza LoginActivity para que no pueda volver atrás

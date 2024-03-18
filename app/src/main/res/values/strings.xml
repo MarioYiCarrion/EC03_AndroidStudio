@@ -16,4 +16,6 @@
     <string name="btnreservar">Reservar Ahora</string>
     <string name="Formulario">Formulario</string>
     <string name="Formulari">Formulario</string>
+    <string name="listadoFragmen">Listado de Reservas</string>
+    <string name="ListaReservas">Lista de Reservaciones</string>
 </resources>
