@@ -18,10 +18,11 @@
     <string name="listadoFragmen">Listado de Reservas</string>
     <string name="ListaReservas">Lista de Reservaciones</string>
     <string name="menu_listado">LISTADO</string>
-    <string name="titulomisamigos">Mis Amigos...</string>
+    <string name="titulomisamigos">Mis Amigos</string>
+    <string name="Bienvenidos">Bienvenidos al App de Mascotas</string>
+    <string name="Principal">Pantalla Principal</string>
+    <string name="titulonav">Hospedaje de Perros</string>
+    <string name="nav_header_su">Siempre lo mejor para los engreidos</string>
 
-    
-    
-    
 
 </resources>
