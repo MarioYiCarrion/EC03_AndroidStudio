@@ -19,7 +19,7 @@
             android:layout_height="115dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@drawable/dalmatian_dog_animal_15959" />
 
         <TextView
             android:id="@+id/tvnomandroid"
