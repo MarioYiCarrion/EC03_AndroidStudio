@@ -2,9 +2,24 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mobile_navigation"
-    app:startDestination="@id/listadoFragment">
+    android:id="@+id/mobile_navigation"    
+    app:startDestination="@id/principalFragment">
     <fragment
+        android:id="@+id/principalFragment"
+        android:name="pe.edu.idat.ec03_androidstudio.PrincipalFragment"
+        android:label="fragment_principal"
+        tools:layout="@layout/fragment_principal" />
+    <fragment
+        android:id="@+id/formularioFragment"
+        android:name="pe.edu.idat.ec03_androidstudio.FormularioFragment"
+        android:label="@string/Formulari"
+        tools:layout="@layout/fragment_formulario" />
+    <fragment
+        android:id="@+id/listaReservasFragment"
+        android:name="pe.edu.idat.ec03_androidstudio.ListaReservasFragment"
+        android:label="fragment_lista_reservas"
+        tools:layout="@layout/fragment_lista_reservas" />
+  <fragment
         android:id="@+id/listadoFragment"
         android:name="pe.edu.idat.ec03_androidstudio.ListadoFragment"
         android:label="@string/menu_listado"
